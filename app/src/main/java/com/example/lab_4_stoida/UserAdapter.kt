@@ -45,7 +45,7 @@ class UserAdapter(listener: AdapterListener) :
     ) {
         val users = usersList[position]
         holder.name.text = users.name
-        holder.email.text = users.email
+        holder.city.text = users.city
         holder.update.setOnClickListener { adapterListener.OnUpdate(users) }
         holder.delete.setOnClickListener { adapterListener.OnDelete(users.id, position) }
     }
@@ -56,13 +56,13 @@ class UserAdapter(listener: AdapterListener) :
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val name: TextView
-        val email: TextView
+        val city: TextView
         val update: ImageView
         val delete: ImageView
 
         init {
             name = itemView.findViewById(R.id.name)
-            email = itemView.findViewById(R.id.email)
+            city = itemView.findViewById(R.id.city)
             update = itemView.findViewById(R.id.update)
             delete = itemView.findViewById(R.id.delete)
         }

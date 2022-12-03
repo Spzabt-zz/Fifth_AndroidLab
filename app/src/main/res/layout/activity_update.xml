@@ -15,8 +15,8 @@
       android:layout_height="wrap_content"/>
 
   <EditText
-      android:id="@+id/email"
-      android:hint="Email"
+      android:id="@+id/city"
+      android:hint="City"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
 
